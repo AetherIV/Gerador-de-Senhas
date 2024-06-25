@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gerador de senhas</h1>
+    </header>
+
+    <div id="passwordContainer">
+
+        <h2>Tamanho da Senha</h2>
+
+        <div id="passwordLgthContainer">
+            <input type="text" id="passLength" placeholder="Tamanho (numérico)">
+        </div>
+
+        <h2>Caracteres Permitidos</h2>
+        
+        <div id="charContainer">
+            <label for="numAllowed" class="charsLabel">Permitir Números</label>
+            <input type="checkbox" id="numAllowed" class="checkboxes">
+            <label for="symbAllowed" class="charsLabel">Permitir Símbolos</label>
+            <input type="checkbox" id="symbAllowed" class="checkboxes">
+            <label for="lowerAllowed" class="charsLabel">Permitir Minúsculos</label>
+            <input type="checkbox" id="lowerAllowed" class="checkboxes">
+            <label for="upperAllowed" class="charsLabel">Permitir Maiúsculos</label>
+            <input type="checkbox" id="upperAllowed" class="checkboxes">
+        </div>
+
+
+    </div>
+
+
+    <div id="buttonContainer">
+        <button id="generatePassword" onclick="generatePassword()">Gerar Senha</button>
+        <button id="clearPassword" onclick="clearPassword()">Limpar Senha</button>
+    </div>
+
+    <div id="passwordOut">
+        <h2>Senha Gerada</h2>
+        <span id="passwordLabel">
+            <label id="generatedPassword"></label>
+        </span>
+        <button id="copyBtn" onclick="copyText()">Copiar senha</button>
+    </div>
+
+    <footer>
+        <h4>
+            Solução desenvolvida por Rafael Romera
+        </h4>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
